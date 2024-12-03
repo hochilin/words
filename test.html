@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vocabulary Test</h1>
+        
+        <!-- 顯示從 Excel 檔案載入的題目 -->
+        <div id="loadResult"></div>
+
+        <div id="questions"></div>
+
+        <!-- 提交測驗的按鈕 -->
+        <button id="submitTest">Submit Test</button>
+        
+        <!-- 顯示分數 -->
+        <div id="score" style="display: none;"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
