@@ -3,26 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vocabulary Test</title>
-    <link rel="stylesheet" href="style.css">
+    <title>English Vocabulary Test</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+        button {
+            padding: 5px 10px;
+            font-size: 14px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #submitTest {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #submitTest:hover {
+            background-color: #45a049;
+        }
+        #score {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Vocabulary Test</h1>
-        
-        <!-- 顯示從 Excel 檔案載入的題目 -->
-        <div id="loadResult"></div>
-
-        <div id="questions"></div>
-
-        <!-- 提交測驗的按鈕 -->
-        <button id="submitTest">Submit Test</button>
-        
-        <!-- 顯示分數 -->
-        <div id="score" style="display: none;"></div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <script src="script.js"></script>
+    <h1>English Vocabulary Test</h1>
+    <div id="questions"></div>
+    <button id="submitTest">Submit</button>
+    <div id="score" style="display:none;"></div>
 </body>
 </html>
